@@ -4,8 +4,25 @@
   <artifactId>docket-test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  
   <properties>
 	  <maven.compiler.target>17</maven.compiler.target>
 	  <maven.compiler.source>17</maven.compiler.source>
   </properties>
+  
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>com.mouka.test.Main</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 </project>
