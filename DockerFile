@@ -1,4 +1,4 @@
 FROM openjdk:17-alpine
-ADD target/docky.jar docky.jar
+COPY target/docky.jar docky.jar
 ENTRYPOINT ["java", "-jar","docky.jar"]
 EXPOSE 8080
